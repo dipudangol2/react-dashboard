@@ -38,6 +38,7 @@ export function parseTripData(jsonString: string): Trip | null {
 }
 
 export function getFirstWord(input: string = ""): string {
+    if (typeof input !== "string") return "";
     return input.trim().split(/\s+/)[0] || "";
 }
 

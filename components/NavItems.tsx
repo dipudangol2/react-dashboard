@@ -58,7 +58,7 @@ const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
                         className='cursor-pointer'
                     >
                         <img
-                            src="assets/icons/logout.svg"
+                            src="/assets/icons/logout.svg"
                             alt='logout'
                             className='size-6'
                         />
