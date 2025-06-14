@@ -47,8 +47,8 @@ const TripDetail = ({ loaderData }: Route.ComponentProps) => {
     } = tripData || {};
 
     const allTrips = loaderData.allTrips as Trip[] | [];
-    console.log(allTrips[0].interests);
-    console.log(allTrips[1].interests);
+    console.log(allTrips);
+    console.log(allTrips);
 
 
     const pillItems = [
@@ -207,7 +207,7 @@ const TripDetail = ({ loaderData }: Route.ComponentProps) => {
                     </section>
                 ))}
             </section>
-            
+
             <section className='flex flex-col gap-6'>
                 <h2 className='p-24-semibold text-dark-100'>Popular Trips</h2>
 
@@ -221,7 +221,7 @@ const TripDetail = ({ loaderData }: Route.ComponentProps) => {
                                     name={name}
                                     location={itinerary?.[0].location ?? ''}
                                     imageUrl={imageUrls[0]}
-                                    tags={[interests, travelStyle]}
+                                    tags={[travelStyle, interests]}
                                     price={estimatedPrice}
                                 />
                             )
